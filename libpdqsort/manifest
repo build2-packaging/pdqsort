@@ -4,12 +4,14 @@ version: 0.0.1-a.0.z
 type: lib,binless
 language: c++
 project: pdqsort
-summary: pdqsort C++ library
+summary: Pattern-defeating quicksort C++ library
 license: Zlib
+topics: sorting algorithm, comparison sort, introspective sort, branchless partitioning
+keywords: sort introsort heapsort branchless header-only
 description-file: README.md
 package-description-file: PACKAGE-README.md
-url: https://example.org/upstream
-email: upstream@example.org
+url: https://github.com/orlp/pdqsort
+email: orsonpeters@gmail.com
 package-url: https://github.com/build2-packaging/pdqsort
 package-email: packaging@build2.org ; Mailing list.
 depends: * build2 >= 0.18.0
