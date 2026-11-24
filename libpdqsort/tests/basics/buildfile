@@ -1,3 +1,9 @@
 import libs = libpdqsort%lib{pdqsort}
 
 exe{driver}: {hxx cxx}{**} $libs testscript{**}
+
+# Upstream pdqsort.h stores block offsets (always less than 64) as unsigned
+# char, which MSVC flags as a possible loss of data (C4267).
+#
+if ($cxx.class == 'msvc')
+  cxx.coptions += /wd4267
