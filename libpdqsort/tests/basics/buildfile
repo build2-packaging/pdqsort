@@ -1,0 +1,3 @@
+import libs = libpdqsort%lib{pdqsort}
+
+exe{driver}: {hxx cxx}{**} $libs testscript{**}
