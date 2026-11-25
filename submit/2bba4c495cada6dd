@@ -1,0 +1,8 @@
+: 1
+name: libpdqsort
+version: 0.0.1
+type: lib,binless
+language: c++
+project: pdqsort
+summary: Pattern-defeating quicksort C++ library
+license: Zlib
